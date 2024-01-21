@@ -1,36 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Selector from '../components/Selector'
+import SoundButton from '../components/SoundButton'
+import OpenNewTab from '../components/OpenNewTab'
+import OmutatsuButtonInfoList from '../components/streamer/OmutatsuButtonList'
 
-function Header({ src }: any) {
-  return <h2>{src}</h2>
-}
-
-function Buttons({ str }: any) {
-  return (
-    <div>
-      <button>{str}</button>
-    </div>
+const OmutatsuPage = () => {
+  const title = 'こんちあああああああ'
+  const about = (
+    <p className="how_about">
+      <OpenNewTab url="https://twitter.com/omrice4869" display="おむたつさん" />
+      が喋ってくれるよ。かわちいね。<br></br>
+      <OpenNewTab url="https://www.youtube.com/@omutatsu" display="Youtube" />
+      配信から切り抜いています。音量の上げすぎには注意してね。
+    </p>
   )
-}
+  const [sortOrder, setSortOrder] = useState<'display' | 'stream'>('display')
+  const [buttonInfoList, setButtonInfoList] = useState([
+    ...OmutatsuButtonInfoList,
+  ])
 
-function Footer() {
+  const sortButtonInfoList = (list: any[]) => {
+    const sortedList = [...list].sort((a, b) =>
+      sortOrder === 'display'
+        ? a.display.localeCompare(b.display)
+        : a.stream.localeCompare(b.stream),
+    )
+    return sortedList
+  }
+  const handleSortChange = (newSortOrder: 'display' | 'stream') => {
+    setSortOrder(newSortOrder)
+    setButtonInfoList(sortButtonInfoList(OmutatsuButtonInfoList))
+  }
+
+  const buttonList = sortButtonInfoList(buttonInfoList).map((info) => (
+    <SoundButton streamer="omutatsu" key={info.fileName} {...info} />
+  ))
+
   return (
-    <footer>
-      <div>
-        音声等の権利は、すべて元著作権利者に帰属します。 Copyrights to audio and
-        other materials belong to the original copyright holders.
+    <div className="container">
+      <Header title={title} />
+      <div className="main_contents">
+        {about}
+        <Selector sortOrder={sortOrder} handleSortChange={handleSortChange} />
+        <hr></hr>
+        <div className="button_list">{buttonList}</div>
       </div>
-    </footer>
-  )
-}
-
-export default function RootPage() {
-  return (
-    <div>
-      <h1>こんちああああ</h1>
-      <hr />
-      <Header src="おむたつぼたん" />
-      <Buttons str="aaa" />
       <Footer />
     </div>
   )
 }
+
+export default OmutatsuPage
