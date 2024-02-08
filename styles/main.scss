@@ -1,12 +1,15 @@
-$main-color: #ffcccc;
-$sub-color: #ff9999;
+:root {
+  --main-omutatsu-color: #ffcccc;
+  --sub-omutatsu-color: #ff9999;
+}
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
 body {
-  background-color: $main-color;
+  background-color: var(--main-omutatsu-color);
   .container {
     height: 100vh;
     display: flex;
@@ -29,11 +32,11 @@ body {
         border-style: solid;
         border-width: 2px;
         border-radius: 10px;
-        border-color: $sub-color;
+        border-color: var(--sub-omutatsu-color);
       }
       button.selected {
-        background-color: $sub-color;
-        border-color: $main-color;
+        background-color: var(--sub-omutatsu-color);
+        border-color: var(--main-omutatsu-color);
       }
       .selector {
         display: flex;

@@ -25,7 +25,7 @@ const OmutatsuPage = () => {
     const sortedList = [...list].sort((a, b) =>
       sortOrder === 'display'
         ? a.display.localeCompare(b.display)
-        : a.stream.localeCompare(b.stream),
+        : a.streamId.localeCompare(b.streamId),
     )
     return sortedList
   }
