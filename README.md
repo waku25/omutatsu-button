@@ -4,7 +4,7 @@
 
 ## なにこれ
 
-ボタンを押すと[おむたつさん](https://www.youtube.com/@omutatsu)がお話してくれます。[動くものはここ]()
+ボタンを押すと[おむたつさん](https://www.youtube.com/@omutatsu)がお話してくれます。[動くものはここ](https://omutatsu-button.vercel.app/)
 
 ## ライセンス
 
