@@ -34,6 +34,21 @@ const OmutatsuButtonInfoList = [
     display: 'みんな元気ですかあ',
     streamId: 'v3A7O6rhylY',
   },
+  {
+    fileName: 'P2Sjpd6T1Cw_korean',
+    display: 'おむたつイムニダ～',
+    streamId: 'P2Sjpd6T1Cw',
+  },
+  {
+    fileName: 'P2Sjpd6T1Cw_nemui',
+    display: 'ほんとにねむいの…',
+    streamId: 'P2Sjpd6T1Cw',
+  },
+  {
+    fileName: 'P2Sjpd6T1Cw_wakaru',
+    display: 'わかる！',
+    streamId: 'P2Sjpd6T1Cw',
+  },
 ]
 
 export default OmutatsuButtonInfoList

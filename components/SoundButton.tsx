@@ -17,7 +17,6 @@ const SoundButton: React.FC<SoundButtonProps> = ({
 }) => {
   const soundFilePath = `/sounds/${streamer}/${fileName}.mp3`
   const handleButtonClick = () => {
-    console.log(soundFilePath)
     const audio = new Audio(soundFilePath)
     audio.play()
   }
