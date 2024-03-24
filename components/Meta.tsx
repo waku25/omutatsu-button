@@ -8,7 +8,7 @@ interface MetaProps {
 }
 
 const Meta: React.FC<MetaProps> = ({ title, keyword, streamer, path }) => {
-  const DOMAIN_URL = 'https://omutatsu-button.vercel.app'
+  const DOMAIN_URL = 'https://soundbutton.waku25.dev'
   const SITE_URL = DOMAIN_URL + '/'
   const keywords = keyword.join(', ')
   const siteUrl = SITE_URL + path

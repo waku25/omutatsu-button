@@ -20,6 +20,8 @@ const Tooltip: React.FC<TooltipProps> = ({ name, streamId, platform }) => {
     case PLATFORM.youtube:
       url = platform + 'watch?v=' + streamId
       break
+    case PLATFORM.twitchClip:
+      url = platform + streamId
     default:
       break
   }

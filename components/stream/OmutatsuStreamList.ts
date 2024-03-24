@@ -1,4 +1,4 @@
-import { PLATFORM } from './Platform'
+import { PLATFORM } from '../Platform'
 
 export const StreamList = [
   {

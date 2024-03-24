@@ -1,6 +1,6 @@
 import React from 'react'
 import Tooltip from './Tooltip'
-import { StreamList } from './StreamList'
+import { StreamList } from './stream/OmutatsuStreamList'
 
 interface SoundButtonProps {
   fileName: string
