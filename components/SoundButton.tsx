@@ -1,6 +1,7 @@
 import React from 'react'
 import Tooltip from './Tooltip'
 import { StreamList } from './stream/OmutatsuStreamList'
+import styles from '../styles/Button.module.css'
 
 interface SoundButtonProps {
   fileName: string
@@ -24,7 +25,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({
   const streamName = streamInfo ? streamInfo.title : ''
   const streamPlatform = streamInfo ? streamInfo.platform : ' '
   return (
-    <button onClick={handleButtonClick}>
+    <button onClick={handleButtonClick} className={styles.button}>
       {display}
       <Tooltip
         name={streamName}

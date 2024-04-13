@@ -1,0 +1,15 @@
+.main_contents {
+    text-align: center;
+}
+
+.how_about {
+    margin-bottom: 5px;
+}
+
+.hr_line {
+    margin: 5px 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+}

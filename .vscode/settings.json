@@ -8,4 +8,7 @@
     "source.fixAll.eslint": "true"
   },
   "remote.autoForwardPortsFallback": 0,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
 }

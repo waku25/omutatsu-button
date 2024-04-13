@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import OpenNewTab from './OpenNewTab'
 import styles from '../styles/Tooltip.module.css'
 import { Platform, PLATFORM } from './Platform'
