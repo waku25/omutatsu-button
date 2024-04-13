@@ -6,6 +6,7 @@ import Selector from '../components/Selector'
 import SoundButton from '../components/SoundButton'
 import OpenNewTab from '../components/OpenNewTab'
 import OmutatsuButtonInfoList from '../components/streamer/OmutatsuButtonList'
+import styles from '../styles/Omutatsu.module.css'
 
 const OmutatsuPage = () => {
   const title = 'こんちあああああああ'
@@ -54,7 +55,7 @@ const OmutatsuPage = () => {
   ))
 
   return (
-    <>
+    <div className={styles.omutatsu_button_page}>
       <Meta
         title={streamerName + 'ボタン'}
         keyword={keywords}
@@ -71,7 +72,7 @@ const OmutatsuPage = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

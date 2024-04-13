@@ -1,0 +1,4 @@
+.omutatsu_button_page {
+    --main-color: var(--main-omutatsu-color);
+    --sub-color: var(--sub-omutatsu-color);
+}

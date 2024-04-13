@@ -3,36 +3,52 @@
   display: inline-block;
   padding-left: 5px;
 }
+
 .tooltip .icon::before {
   content: 'i';
   font-size: 95%;
   font-weight: bold;
-  color: var(--sub-omutatsu-color);
+  color: var(--sub-color);
   font-style: normal;
   display: inline-block;
-  width: 20px; /* アイコンの幅 */
-  height: 20px; /* アイコンの高さ */
-  border-radius: 50%; /* アイコンの丸み */
-  border: solid 2px var(--sub-omutatsu-color);
+  width: 20px;
+  /* アイコンの幅 */
+  height: 20px;
+  /* アイコンの高さ */
+  border-radius: 50%;
+  /* アイコンの丸み */
+  border: solid 2px var(--sub-color);
   text-align: center;
-  line-height: 16px; /* アイコンの垂直中央揃え */
-  cursor: pointer; /* カーソルをポインターに変更 */
+  line-height: 16px;
+  /* アイコンの垂直中央揃え */
+  cursor: pointer;
+  /* カーソルをポインターに変更 */
 }
+
 .tooltip .tooltipText {
   visibility: hidden;
-  width: 180px; /* 吹き出しの幅 */
-  background-color: #555; /* 吹き出しの背景色 */
-  color: #fff; /* 吹き出しのテキスト色 */
+  width: 180px;
+  /* 吹き出しの幅 */
+  background-color: #555;
+  /* 吹き出しの背景色 */
+  color: #fff;
+  /* 吹き出しのテキスト色 */
   text-align: center;
-  border-radius: 6px; /* 吹き出しの丸み */
-  padding: 10px 10px; /* 吹き出しの内側の余白 */
+  border-radius: 6px;
+  /* 吹き出しの丸み */
+  padding: 10px 10px;
+  /* 吹き出しの内側の余白 */
   position: absolute;
   z-index: 1;
-  bottom: 100%; /* 吹き出しをアイコンの下に配置 */
-  left: 50%; /* 吹き出しをアイコンの真ん中に配置 */
-  margin-left: -90px; /* 吹き出しをアイコンの真ん中に配置 */
+  bottom: 100%;
+  /* 吹き出しをアイコンの下に配置 */
+  left: 50%;
+  /* 吹き出しをアイコンの真ん中に配置 */
+  margin-left: -90px;
+  /* 吹き出しをアイコンの真ん中に配置 */
   opacity: 0;
-  transition: opacity 0.3s; /* オーバーフロー時のアニメーション */
+  transition: opacity 0.3s;
+  /* オーバーフロー時のアニメーション */
 }
 
 .tooltip .tooltipText a,
