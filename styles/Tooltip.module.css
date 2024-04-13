@@ -12,43 +12,38 @@
   font-style: normal;
   display: inline-block;
   width: 20px;
-  /* アイコンの幅 */
   height: 20px;
-  /* アイコンの高さ */
   border-radius: 50%;
-  /* アイコンの丸み */
   border: solid 2px var(--sub-color);
   text-align: center;
   line-height: 16px;
-  /* アイコンの垂直中央揃え */
   cursor: pointer;
-  /* カーソルをポインターに変更 */
 }
 
 .tooltip .tooltipText {
   visibility: hidden;
-  width: 180px;
-  /* 吹き出しの幅 */
+  white-space: nowrap;
+  width: auto;
+  min-width: 100px;
+  max-width: 250px;
   background-color: #555;
-  /* 吹き出しの背景色 */
   color: #fff;
-  /* 吹き出しのテキスト色 */
   text-align: center;
-  border-radius: 6px;
   /* 吹き出しの丸み */
-  padding: 10px 10px;
+  border-radius: 6px;
   /* 吹き出しの内側の余白 */
+  padding: 10px 10px;
   position: absolute;
   z-index: 1;
-  bottom: 100%;
   /* 吹き出しをアイコンの下に配置 */
+  bottom: 100%;
+  /* 吹き出しをアイコンの中央に配置 */
   left: 50%;
-  /* 吹き出しをアイコンの真ん中に配置 */
-  margin-left: -90px;
-  /* 吹き出しをアイコンの真ん中に配置 */
+  transform: translateX(-60%);
+  /* ツールチップを中央に配置 */
   opacity: 0;
   transition: opacity 0.3s;
-  /* オーバーフロー時のアニメーション */
+  margin-left: -10px;
 }
 
 .tooltip .tooltipText a,

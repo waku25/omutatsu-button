@@ -6,13 +6,15 @@ import Selector from '../components/Selector'
 import SoundButton from '../components/SoundButton'
 import OpenNewTab from '../components/OpenNewTab'
 import OmutatsuButtonInfoList from '../components/streamer/OmutatsuButtonList'
-import styles from '../styles/Omutatsu.module.css'
+import ColorStyle from '../styles/Omutatsu.module.css'
+import ContainerStyle from '../styles/Container.module.css'
+import ContentStyle from '../styles/Content.module.css'
 
 const OmutatsuPage = () => {
   const title = 'こんちあああああああ'
   const streamerName = 'おむたつ'
   const about = (
-    <p className="how_about">
+    <p className={ContentStyle.how_about}>
       <OpenNewTab
         url="https://twitter.com/omrice4869"
         display={streamerName + 'さん'}
@@ -55,19 +57,19 @@ const OmutatsuPage = () => {
   ))
 
   return (
-    <div className={styles.omutatsu_button_page}>
+    <div className={ColorStyle.omutatsu_button_page}>
       <Meta
         title={streamerName + 'ボタン'}
         keyword={keywords}
         streamer={streamerName}
         path={''}
       />
-      <div className="container">
+      <div className={`${ContainerStyle.container} container`}>
         <Header title={title} />
-        <div className="main_contents">
+        <div className={ContentStyle.main_contents}>
           {about}
           <Selector sortOrder={sortOrder} handleSortChange={handleSortChange} />
-          <hr></hr>
+          <hr className={ContentStyle.hr_line}></hr>
           <div className="button_list">{buttonList}</div>
         </div>
         <Footer />

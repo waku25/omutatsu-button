@@ -1,11 +1,12 @@
 import React from 'react'
 import OpenNewTab from './OpenNewTab'
+import Style from '../styles/Footer.module.css'
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer>
+    <footer className={Style.footer}>
       <div>
         音声等の権利は、すべて元著作権利者に帰属します。 Copyrights to audio and
         other materials belong to the original copyright holders.

@@ -8,47 +8,7 @@
 ::before {
   box-sizing: border-box;
 }
+
 body {
-  background-color: var(--main-omutatsu-color);
-  .container {
-    height: 100vh;
-    display: flex;
-    flex-flow: column;
-    .header,
-    .how_about,
-    .button_list {
-      text-align: center;
-    }
-    .header {
-      margin-top: 20px;
-    }
-    .main_contents {
-      .how_about {
-        margin-bottom: 5px;
-      }
-      hr {
-        margin: 5px 0;
-        color: inherit;
-        border: 0;
-        border-top: 1px solid;
-        opacity: 0.25;
-      }
-    }
-    footer {
-      margin-top: auto;
-      width: 100%;
-      padding: 10px;
-    }
-    a {
-      color: #555;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #000;
-      text-decoration: underline;
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--main-omutatsu-color);
-  }
+  min-width: 350px;
 }

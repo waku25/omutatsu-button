@@ -1,4 +1,10 @@
 .omutatsu_button_page {
     --main-color: var(--main-omutatsu-color);
     --sub-color: var(--sub-omutatsu-color);
+
+    background-color: var(--main-color);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--main-color);
+    }
 }
