@@ -11,4 +11,9 @@ export const StreamList = [
     title: 'おきた！！！！お話！！！！！ ',
     platform: PLATFORM.youtube,
   },
+  {
+    stream: 'Bgfc0zApsXs',
+    title: '夕方しっぽりおはなし',
+    platform: PLATFORM.youtube,
+  },
 ]

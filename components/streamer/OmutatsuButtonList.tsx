@@ -179,6 +179,102 @@ const OmutatsuButtonInfoList = [
     kanaOrder: 'らいせにきたい',
     streamId: 'P2Sjpd6T1Cw',
   },
+  {
+    fileName: 'Bgfc0zApsXs_tetetete',
+    display: 'てーててて♪',
+    kanaOrder: 'てーててて',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_atisugina',
+    display: 'あちすぎな、世界',
+    kanaOrder: 'あちすぎな、せかい',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_dokidoki',
+    display: 'ドキドキ、ドキドキ',
+    kanaOrder: 'どきどき、どきどき',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_asekusai',
+    display: 'おむたつさん汗臭ぁ～い',
+    kanaOrder: 'おむたつさんあせくさぁ～い',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_koxnnitiha',
+    display: 'こ゛ん゛に゛ち゛は゛',
+    kanaOrder: 'ごんにぢば',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_prprprpr',
+    display: 'ペロペロprprprpr',
+    kanaOrder: 'ぺろぺろぺろ',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_nandeowaa',
+    display: 'な、なんで…ｳﾜｧ',
+    kanaOrder: 'な、なんで…うわぁ',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_madatarinai',
+    display: 'まだ足りない',
+    kanaOrder: 'まだたりない',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_nandexe',
+    display: 'なんで！？どーして！？',
+    kanaOrder: 'なんで！？どーして！？',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_syouganaina',
+    display: 'ｼｮｰｶﾞﾅｲﾅｧｰ',
+    kanaOrder: 'しょーがないなぁー',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_tanonda',
+    display: '頼んだ',
+    kanaOrder: 'たのんだ',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_mikunegimashi',
+    display: 'ﾐｸﾐｸﾈｷﾞﾈｷﾞﾏｼﾏｼ',
+    kanaOrder: 'みくみくねぎねぎましまし',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_mikunegidekomashi',
+    display: 'ﾐｸﾐｸﾈｷﾞﾈｷﾞﾃﾞｺﾃﾞｺﾏｼﾏｼ',
+    kanaOrder: 'みくみくねぎねぎでこでこましまし',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_okutiyuruyuru',
+    display: 'これは私のお口がゆるゆるだからです',
+    kanaOrder: 'これはわたしのおくちがゆるゆるだからです',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_shukurimu-retasu',
+    display: 'シュークリームのシューはレタスって意味（キリッ）',
+    kanaOrder: 'しゅーくりーむのしゅーはれたすっていみ',
+    streamId: 'Bgfc0zApsXs',
+  },
+  {
+    fileName: 'Bgfc0zApsXs_shukurimu-kyabetsu',
+    display: 'シュークリームのシューはレタスじゃなくてキャベツでした',
+    kanaOrder: 'しゅーくりーむのしゅーはれたすではなくきゃべつでした',
+    streamId: 'Bgfc0zApsXs',
+  },
 ]
 
 export default OmutatsuButtonInfoList
