@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Meta from '../components/Meta'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -38,18 +38,23 @@ const OmutatsuPage = () => {
   const [buttonInfoList, setButtonInfoList] = useState([
     ...OmutatsuButtonInfoList,
   ])
+  // sortButtonInfoList 関数を useCallback でメモ化
+  const sortButtonInfoList = useCallback(
+    (list: any[]) => {
+      return [...list].sort((a, b) =>
+        sortOrder === 'display'
+          ? a.display.localeCompare(b.display)
+          : a.streamId.localeCompare(b.streamId),
+      )
+    },
+    [sortOrder], // sortOrder に依存
+  )
+  useEffect(() => {
+    setButtonInfoList(sortButtonInfoList(OmutatsuButtonInfoList))
+  }, [sortButtonInfoList, sortOrder])
 
-  const sortButtonInfoList = (list: any[]) => {
-    const sortedList = [...list].sort((a, b) =>
-      sortOrder === 'display'
-        ? a.display.localeCompare(b.display)
-        : a.streamId.localeCompare(b.streamId),
-    )
-    return sortedList
-  }
   const handleSortChange = (newSortOrder: 'display' | 'stream') => {
     setSortOrder(newSortOrder)
-    setButtonInfoList(sortButtonInfoList(OmutatsuButtonInfoList))
   }
 
   const buttonList = sortButtonInfoList(buttonInfoList).map((info) => (
