@@ -61,6 +61,13 @@ const OmutatsuPage = () => {
     <SoundButton streamer="omutatsu" key={info.fileName} {...info} />
   ))
 
+  useEffect(() => {
+    document.documentElement.classList.add('index-page')
+    return () => {
+      document.documentElement.classList.remove('index-page')
+    }
+  }, [])
+
   return (
     <div className={ColorStyle.omutatsu_button_page}>
       <Meta
