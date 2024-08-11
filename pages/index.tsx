@@ -43,7 +43,7 @@ const OmutatsuPage = () => {
     (list: any[]) => {
       return [...list].sort((a, b) =>
         sortOrder === 'display'
-          ? a.display.localeCompare(b.display)
+          ? a.kanaOrder.localeCompare(b.kanaOrder)
           : a.streamId.localeCompare(b.streamId),
       )
     },

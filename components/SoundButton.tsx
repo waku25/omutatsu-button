@@ -7,6 +7,7 @@ interface SoundButtonProps {
   fileName: string
   streamer: string
   display: string
+  kanaOrder: string
   streamId: string
 }
 
@@ -14,6 +15,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({
   fileName,
   streamer,
   display,
+  kanaOrder,
   streamId,
 }) => {
   const soundFilePath = `/sounds/${streamer}/${fileName}.mp3`
@@ -25,7 +27,12 @@ const SoundButton: React.FC<SoundButtonProps> = ({
   const streamName = streamInfo ? streamInfo.title : ''
   const streamPlatform = streamInfo ? streamInfo.platform : ' '
   return (
-    <button onClick={handleButtonClick} className={styles.button}>
+    <button
+      onClick={handleButtonClick}
+      className={styles.button}
+      type="button"
+      value={kanaOrder}
+    >
       {display}
       <Tooltip
         name={streamName}
